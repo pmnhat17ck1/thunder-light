@@ -1,0 +1,25 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "noImplicitAny": false,
+    "noUnusedLocals": false,
+    "removeComments": true,
+    "noLib": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "useUnknownInCatchVariables": false,
+    "target": "ES2021",
+    "sourceMap": true,
+    "allowJs": false,
+    "outDir": "dist",
+    "baseUrl": ".",
+    "paths": {
+      "@thunder-light/common": ["./packages/common"],
+      "@thunder-light/common/*": ["./packages/common/*"],
+      "@thunder-light/core": ["./packages/core"],
+      "@thunder-light/core/*": ["./packages/core/*"],
+    }
+  },
+  "include": ["packages/**/*", "integration/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}
