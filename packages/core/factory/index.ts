@@ -73,6 +73,7 @@ export class ThunderLightFactory extends RegisterManager {
           options,
         }
       )
+      this.use(adapter.getRouter());
     }
   }
 

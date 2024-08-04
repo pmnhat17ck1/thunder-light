@@ -1,10 +1,10 @@
 {
-  "name": "@thunder-light/core",
+  "name": "thunder-light",
   "version": "1.0.0",
-  "description": "The lightest and fastest library for Bun",
+  "description": "The lightest and fastest library based on Elysia",
   "repository": {
     "type": "git",
-    "url": "https://github.com/pmnhat17ck1/thunder-light.git"
+    "url": "git+https://github.com/pmnhat17ck1/thunder-light.git"
   },
   "author": "Nhat Pham",
   "scripts": {
@@ -21,7 +21,9 @@
   "engines": {
     "node": ">=18"
   },
-  "workspaces": ["packages/*"],
+  "workspaces": [
+    "packages/*"
+  ],
   "packageManager": "bun@1.0.26",
   "dependencies": {
     "elysia": "^1.0.27"
