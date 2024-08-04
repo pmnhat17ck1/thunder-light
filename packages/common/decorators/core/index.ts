@@ -1,14 +1,9 @@
-export * from './bind.decorator';
-export * from './catch.decorator';
-export * from './controller.decorator';
-export * from './dependencies.decorator';
-export * from './exception-filters.decorator';
-export * from './inject.decorator';
+export * from './guard.decorator';
+export * from './Interceptor.decorator';
+export * from './method.decorator';
+export * from './param.decorator';
 export * from './injectable.decorator';
-export * from './optional.decorator';
-export * from './set-metadata.decorator';
-export * from './use-guards.decorator';
-export * from './use-interceptors.decorator';
-export * from './use-pipes.decorator';
-export * from './apply-decorators';
-export * from './version.decorator';
+export * from './controller.decorator';
+export * from './module.decorator';
+
+

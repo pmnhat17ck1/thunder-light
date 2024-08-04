@@ -1,4 +1,4 @@
-import { MODULE_METADATA as metadataConstants } from '../constants';
+import { ModuleMetadataKeys as metadataConstants } from '../constants';
 
 export const INVALID_MODULE_CONFIG_MESSAGE = (
   text: TemplateStringsArray,
@@ -6,18 +6,18 @@ export const INVALID_MODULE_CONFIG_MESSAGE = (
 ) => `Invalid property '${property}' passed into the @Module() decorator.`;
 
 const metadataKeys = [
-  metadataConstants.IMPORTS,
-  metadataConstants.EXPORTS,
-  metadataConstants.CONTROLLERS,
-  metadataConstants.PROVIDERS,
+  metadataConstants.IMPORTS_KEY,
+  metadataConstants.EXPORTS_KEY,
+  metadataConstants.CONTROLLERS_KEY,
+  metadataConstants.PROVIDERS_KEY,
 ];
 
-export function validateModuleKeys(keys: string[]) {
-  const validateKey = (key: string) => {
+export function validateModuleKeys(keys: symbol[]) {
+  const validateKey = (key: symbol) => {
     if (metadataKeys.includes(key)) {
       return;
     }
-    throw new Error(INVALID_MODULE_CONFIG_MESSAGE`${key}`);
+    throw new Error(INVALID_MODULE_CONFIG_MESSAGE`${String(key)}`);
   };
   keys.forEach(validateKey);
 }

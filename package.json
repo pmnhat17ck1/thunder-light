@@ -31,6 +31,10 @@
     "@turbo/gen": "^1.10.16",
     "@types/bun": "latest",
     "reflect-metadata": "^0.2.2",
+    "@elysiajs/static": "^1.0.3",
+    "@elysiajs/cron": "^1.0.3",
+    "@elysiajs/apollo": "^1.1.0",
+    "@bull-board/api": "^5.20.4",
     "turbo": "^1.10.16",
     "typescript": "^5.2.2"
   },
